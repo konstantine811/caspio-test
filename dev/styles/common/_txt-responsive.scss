@@ -1,0 +1,11 @@
+.nav-link {
+  @include for-desktop-down {
+    font-size: 18px;
+  }
+}
+
+.logo-txt {
+  @include for-desktop-down {
+    letter-spacing: 2.6px;
+  }
+}

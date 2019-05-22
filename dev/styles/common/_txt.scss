@@ -1,0 +1,87 @@
+@include font-face("icomoon", "icomoon/icomoon");
+
+.logo-txt {
+  @include txt-style(10px, 400, $rose);
+  letter-spacing: 2.8px;
+}
+
+.txt {
+  @include txt-style(17px, 400);
+}
+
+.txt-sm {
+  @include txt-style(14px, 400);
+}
+
+.txt-arrow {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    width: 8px;
+    height: 8px;
+    transition: transform ease-in 0.3s;
+  }
+}
+
+.nav-link {
+  @include txt-style(20px, 600, $blue);
+  cursor: pointer;
+}
+
+.nav-hover-bottom-line {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background-color: $rose;
+    transition: width ease 0.3s;
+  }
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+.nav-link-mobile-txt {
+  @include txt-style(11px, 400, $blue);
+}
+
+h2.title-second {
+  @include txt-style(32px, 600);
+}
+
+h3.title-third {
+  @include txt-style(24px, 600);
+}
+
+// txt color
+.txt--black {
+  color: $black !important;
+}
+
+.txt--rose {
+  color: $rose !important;
+}
+
+.txt--blue {
+  color: $blue !important;
+}
+
+.txt--green {
+  color: $green !important;
+}
+
+.txt--silver {
+  color: $silver !important;
+}

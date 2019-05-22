@@ -1,0 +1,21 @@
+{
+  "name": "work-ua",
+  "description": "test page",
+  "main": "index.js",
+  "authors": [
+    "Konstantin Abramov"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}

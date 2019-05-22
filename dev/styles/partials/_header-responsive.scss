@@ -1,0 +1,5 @@
+.nav-link-mobile__align {
+  @include for-phone-only {
+    padding: 15px 5px 0;
+  }
+}

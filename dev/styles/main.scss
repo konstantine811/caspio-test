@@ -1,0 +1,22 @@
+@import "../../build/libs/bootstrap/scss/functions";
+@import "../../build/libs/bootstrap/scss/variables";
+@import "../../build/libs/bootstrap/scss/mixins/_breakpoints";
+
+@import "./common/variables";
+//mixins
+@import "./mixins/txt-mixins";
+@import "./mixins/responsive-mixins";
+
+@import "./common/common";
+@import "./common/txt";
+@import "./common/icons";
+
+// partials for pages
+@import "./partials/header";
+@import "./partials/partials";
+@import "./partials/section-first";
+
+// responsive
+
+@import "./common/txt-responsive";
+@import "./partials/section-first-responsive";
