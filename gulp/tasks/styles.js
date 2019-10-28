@@ -7,10 +7,13 @@ const csso = require('gulp-csso');
 const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
 const csscomb = require('gulp-csscomb');
+const gulpFlatmap = require('gulp-flatmap');
 
 module.exports = function () {
   $.gulp.task('styles', () => {
     return $.gulp.src('./dev/styles/**/*.scss')
+    .pipe(gulpFlatmap(function(stream) {
+      return stream
       .pipe(plumber({
         errorHandler: function (err) {
           notify.onError({
@@ -29,8 +32,10 @@ module.exports = function () {
       .pipe(csscomb())
       .pipe(csso())
       .pipe(sourcemaps.write())
+    }))
       .pipe(rename('styles.min.css'))
       .pipe($.gulp.dest('./build/styles/'))
       .on('end', $.browserSync.reload)
   })
 }
+
