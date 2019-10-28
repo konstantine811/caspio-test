@@ -1,7 +1,7 @@
 block variables
 
 doctype html
-html(lang="ru-RU")
+html(lang="en-En")
   head
     meta(charset="utf-8")
     title #{title}
@@ -15,10 +15,11 @@ html(lang="ru-RU")
     <!--[if lt IE 9]>
     script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
     <![endif]-->
-  body(class=pageClass)
-    include ../modules/header/header
-    main.content
-      block content
-    include ../modules/footer/footer
-    block script
+  body
+    include ../mixins/mixins
+    .app-wrap
+      include ../modules/header/header
+      main.content
+        block content
+      block script
       script(src="js/bundle.js")

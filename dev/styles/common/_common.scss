@@ -1,6 +1,70 @@
 html,
 body {
+  height: 100%;
+  margin: 0;
+  outline: 0;
   overflow: hidden;
   overflow-y: auto;
-  height: 100%;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.app-wrap {
+  backface-visibility: hidden;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  max-width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-bottom {
+  align-items: flex-end;
+}
+
+.divider {
+  background-color: $silver;
+  height: $divider-height;
+  width: 100%;
+}
+
+.divider__wrap {
+  margin-top: $divider-margin-top;
+}
+
+.content {
+  height: $content-height;
+  max-height: $content-max-height;
+}
+
+.avatar {
+  align-items: center;
+  border-radius: 50%;
+  display: inline-flex;
+  height: $avatar-height;
+  justify-content: center;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: $avatar-width;
+}
+
+.avatar__wrap {
+  margin-right: $avatar-margin-right;
+}
+
+.avatar-img {
+  border-radius: inherit;
+  display: inline-flex;
+  height: inherit;
+  width: inherit;
 }

@@ -1,1 +1,17 @@
-@include font-face("icomoon", "icomoon/icomoon");
+@include font-face("Roboto", "Roboto/Roboto-Regrular");
+
+.letter {
+  font-family: 'Roboto', sans-serif;
+  font-size: $font-size-letter;
+	text-transform: uppercase;
+}
+
+.txt {
+	font-family: 'Roboto', sans-serif;
+	font-size: $font-size-txt;
+	color: $silver-2;
+}
+
+.txt--red {
+	color: $red;
+}

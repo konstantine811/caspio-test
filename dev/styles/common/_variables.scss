@@ -1,1 +1,43 @@
+//colors
+$blue: #414CB7;
+$red: #FF3E81;
+$silver: #D6D5D5;
+$silver-2: #4D4D4E;
+$white: white;
+$white-grey: #EEEEEE;
+
+//icons
+$icon-burger: '\e00f';
+$icon-star: '\e9d9';
+
+//txt-styles
+$font-size-letter: 24px;
+$font-size-txt: 15px;
+
+//common styles
+//divider
+$divider-margin-top: 33px;
+$divider-height: 1px;
+//avatar
+$avatar-height: 40px;
+$avatar-width: 40px;
+$avatar-margin-right: 14px;
+
+//header styles
+$header-height: 126px;
+$header-padding: 20px 25px;
+$header-padding-tablet-up: 30px 35px;
+
+//content
+$content-height: 100vh;
+$content-max-height:  calc(100% - #{$header-height});
+
+//menu styles
+$menu-icon-margin-right: 30px;
+$menu-inner-padding: 27px 0 0 0;
+$menu-item-padding: 0 0 44px 0;
+$menu-padding: 0 0 27px 27px;
+$menu-width: 446px;
+
+
 

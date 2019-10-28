@@ -1,0 +1,39 @@
+@include font-face("icomoon", "icomoon/icomoon");
+
+.icon {
+	color: $white;
+	cursor: pointer;
+	display: inline-block;
+	font-family: "icomoon";
+	height: 22px;
+	position: relative;
+	text-align: center;
+  width: 22px;
+  &:after {
+		height: 100%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		width: 100%;
+  }
+}
+
+.icon--red {
+	color: $red;
+}
+
+
+.icon-burger {
+  &:after {
+		content: $icon-burger;
+		font-size: 25px;
+  }
+}
+
+.icon-star {
+  &:after {
+		content: $icon-star;
+		font-size: 25px;
+  }
+}

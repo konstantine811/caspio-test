@@ -1,13 +1,17 @@
-@import "./common/variables";
+@import './common/variables';
 //mixins
-@import "./mixins/txt-mixins";
-@import "./mixins/responsive-mixins";
+@import './mixins/txt-mixins';
+@import './mixins/responsive-mixins';
 
-@import "./common/common";
-@import "./common/txt";
-@import "./common/icons";
+//common styles
+@import './common/common';
+@import './common/txt';
+@import './common/icons';
+@import './common/bgc';
+@import './common/buttons';
 
 // partials for pages
-@import "./partials/header";
-@import "./partials/partials";
-@import "./partials/section-first";
+@import './partials/header';
+@import './partials/partials';
+@import './partials/section-first';
+@import './partials/menu';
