@@ -1,4 +1,4 @@
-@include font-face("Roboto", "Roboto/Roboto-Regrular");
+@include font-face("Roboto", "Roboto/Roboto-Regular");
 
 .letter {
   font-family: 'Roboto', sans-serif;
@@ -7,11 +7,40 @@
 }
 
 .txt {
-	font-family: 'Roboto', sans-serif;
-	font-size: $font-size-txt;
-	color: $silver-2;
+	@include txt-style(Roboto, $font-size-txt, $silver-2);
+	padding: 0;
+	margin: 0;
+}
+
+.txt-sm {
+	@include txt-style(Roboto, $font-size-txt-sm, $silver-2);
+	padding: 0;
+	margin: 0;
+}
+
+.txt-md {
+	@include txt-style(Roboto, $font-size-txt-md, $silver-2);
+	padding: 0;
+	margin: 0;
+}
+
+.title-2 {
+	@include txt-style(Roboto, $font-size-title-2, $white);
+	padding: 0;
+	margin: 0;
+	@include for-tablet-land-up {
+		font-size: $font-size-title-2-table-up;
+	}
 }
 
 .txt--red {
 	color: $red;
+}
+
+.txt--silver-light {
+	color: $silver-3;
+}
+
+.txt-center {
+	text-align: center;
 }

@@ -1,6 +1,24 @@
 
 mixin menu-avatar(img, name)
-	li.menu__item
+	li.menu-item.menu__item
 		.avatar.avatar__wrap
 			img(class="avatar-img" src="../assets/img/" + img + ".jpg")
 		a.menu-link.txt= name
+
+mixin profile-content(mainTxt, subTxt, icon)
+	li.profile__item.d-flex.justify-content-space-btwn
+		.profile-item__content
+			p.txt-md= mainTxt
+			p.txt-sm.txt--silver-light.pt= subTxt
+		if icon
+			.profile-icon__wrap.mr-3.align-self-end
+				.icon.icon--silver(class="icon-" + icon)
+
+mixin profile-content(mainTxt, subTxt, icon)
+	li.profile__item.d-flex.justify-content-space-btwn
+		.profile-item__content
+			p.txt-md= mainTxt
+			p.txt-sm.txt--silver-light.pt= subTxt
+		if icon
+			.profile-icon__wrap.mr-3.align-self-end
+				.icon.icon--silver(class="icon-" + icon)

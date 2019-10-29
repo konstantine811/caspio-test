@@ -1,12 +1,14 @@
 .header {
 	height: $header-height;
+	position: relative;
 }
 
 
 .header__nav-wrap {
 	height: 100%;
-	padding: $header-padding;
-	@include for-tablet-portrait-up {
-		padding: $header-padding-tablet-up;
-	}
+}
+
+.header-nav {
+	width: $side-width;
+	padding: $header-nav-padding;
 }

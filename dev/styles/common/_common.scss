@@ -22,12 +22,64 @@ body {
   position: relative;
 }
 
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.wrapper {
+  padding: $wrapper-padding;
+}
+
+.d-none {
+  display: none !important;
+  &--md {
+    @include for-tablet-land-up {
+      display: none !important;
+    }
+  }
+}
+
+.d-inline-block {
+  display: inline-block !important;
+  &--md {
+    @include for-tablet-land-up {
+      display: inline-block !important;
+    }
+  }
+}
+
 .d-flex {
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .align-items-bottom {
   align-items: flex-end;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.justify-content-space-btwn {
+  justify-content: space-between;
+}
+
+
+.justify-content-end {
+  justify-content: flex-end;
+  &--md {
+    @include for-tablet-land-up {
+      justify-content: flex-end;
+    }
+  }
 }
 
 .divider {
@@ -36,15 +88,20 @@ body {
   width: 100%;
 }
 
-.divider__wrap {
-  margin-top: $divider-margin-top;
-}
 
 .content {
+  display: flex;
   height: $content-height;
   max-height: $content-max-height;
 }
 
+.main-content {
+  height: 100%;
+  position: relative;
+  width: auto;
+}
+
+//avatars
 .avatar {
   align-items: center;
   border-radius: 50%;
@@ -67,4 +124,71 @@ body {
   display: inline-flex;
   height: inherit;
   width: inherit;
+}
+
+.ul-list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+//open window anim transition
+.window-transition {
+  transition-duration: $open-window-duration;
+	transition-timing-function: $open-window-timing-function;
+  transition-property: transform, width;
+  will-change: transform;
+}
+
+.hidden {
+	transform: translateX(-100%);
+}
+
+.visible {
+	transform: translateX(0);
+}
+
+//spacer common
+.mt-2 {
+  margin-top: $space-2 !important;
+}
+
+.mt-5 {
+  margin-top: $space-5 !important;
+}
+
+.mr-2 {
+  margin-right: $space-2 !important;
+}
+
+.mr-3 {
+  margin-right: $space-3 !important;
+}
+
+.mr-4 {
+  margin-right: $space-4 !important;
+}
+
+.pl-3 {
+  padding-left: $space-3 !important;
+}
+
+.pb-3 {
+  padding-bottom: $space-3 !important;
+}
+
+.pt {
+  padding-top: $space !important;
+}
+
+.pt-1 {
+  padding-top: $space-1 !important;
+}
+
+.pt-3 {
+  padding-top: $space-3 !important;
+}
+
+.pt-4 {
+  padding-top: $space-4 !important;
 }

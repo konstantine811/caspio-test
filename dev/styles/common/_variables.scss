@@ -3,20 +3,57 @@ $blue: #414CB7;
 $red: #FF3E81;
 $silver: #D6D5D5;
 $silver-2: #4D4D4E;
+$silver-3: #999999;
+$silver-4: #757575;
 $white: white;
 $white-grey: #EEEEEE;
 
 //icons
 $icon-burger: '\e00f';
 $icon-star: '\e9d9';
+$icon-pen: '\e900';
+$icon-triple-dots: '\e901';
+$icon-arrow-left: '\e902';
+$icon-phone: '\e942';
+$icon-email: '\e904';
+$icon-hongout: '\e903';
+$icon-arrow-drop-down: '\e909';
+$icon-location: '\e905';
+$icon-share: '\e906';
+$icon-search: '\e908';
+$icon-plus: '\e907';
+//icon styles
+$icon-sz-sm: 20px;
+$icon-sz-md: 25px;
+
+//animation
+$open-window-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$open-window-duration: 0.2s;
 
 //txt-styles
 $font-size-letter: 24px;
+$font-size-txt-sm: 13px;
 $font-size-txt: 15px;
+$font-size-txt-md: 16px;
+$font-size-title-2: 35px;
+$font-size-title-2-table-up: 58px;
+
+//buttons
+$btn-float-diameter: 56px;
+$btn-float-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
 
 //common styles
+//common spacer
+$space: 5px;
+$space-1: 7px;
+$space-2: 14px;
+$space-3: 25px;
+$space-4: 35px;
+$space-5: 45px;
+$side-width: 446px;
+//wrappwer
+$wrapper-padding: 0 19px;
 //divider
-$divider-margin-top: 33px;
 $divider-height: 1px;
 //avatar
 $avatar-height: 40px;
@@ -25,8 +62,7 @@ $avatar-margin-right: 14px;
 
 //header styles
 $header-height: 126px;
-$header-padding: 20px 25px;
-$header-padding-tablet-up: 30px 35px;
+$header-nav-padding: 20px 25px;
 
 //content
 $content-height: 100vh;
@@ -34,10 +70,18 @@ $content-max-height:  calc(100% - #{$header-height});
 
 //menu styles
 $menu-icon-margin-right: 30px;
-$menu-inner-padding: 27px 0 0 0;
-$menu-item-padding: 0 0 44px 0;
-$menu-padding: 0 0 27px 27px;
-$menu-width: 446px;
+$menu-inner-padding: 4px 0 0 0;
+$menu-item-padding: 14px 0;
+$menu-width: $side-width;
 
+//profile
+$profile-header-height: 246px;
+$profile-header-padding: 44px 0;
+$profile-name-padding-r: 80px;
+$profile-item-padding: 17px 0;
+$profile-item-content-max-width: 219px;
+$profile-width-tablet-land: 518px;
+$profile-top-tablet-land: -62px;
+$profile-width-desktop: 643px;
 
 

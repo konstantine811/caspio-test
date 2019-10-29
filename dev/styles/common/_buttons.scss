@@ -1,5 +1,26 @@
-.button-reset {
+.btn {
 	background-color: transparent;
 	border: none;
+	cursor: pointer;
 	outline: none;
 }
+
+.btn-float {
+	align-items: center;
+	background-color: $white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	height: $btn-float-diameter;
+	position: absolute;
+	width: $btn-float-diameter;
+	box-shadow: $btn-float-box-shadow;
+	&--red {
+		background-color: $red;
+	}
+	&--bottom-right {
+		bottom: -$btn-float-diameter / 2;
+		right: $btn-float-diameter / 2;
+	}
+}
+

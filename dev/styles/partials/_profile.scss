@@ -1,0 +1,38 @@
+.profile {
+	background: $white;
+	height: 100%;
+	left: 0;
+	overflow-y: scroll;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	@include for-tablet-land-up {
+		position: absolute;
+		width: $profile-width-tablet-land;
+		top: $profile-top-tablet-land;
+	}
+	@include for-desktop-up {
+		width: $profile-width-desktop;
+	}
+}
+.profile-header {
+	position: relative;
+	height: $profile-header-height;
+	width: 100%;
+}
+
+.profile-header__inner {
+	padding: $profile-header-padding;
+}
+
+.profile-name__inner {
+	padding-right: $profile-name-padding-r;
+}
+
+.profile__item {
+	padding: $profile-item-padding;
+}
+
+.profile-item__content {
+	max-width: $profile-item-content-max-width;
+}

@@ -5,10 +5,11 @@
 	cursor: pointer;
 	display: inline-block;
 	font-family: "icomoon";
-	height: 22px;
+	font-size: $icon-sz-sm;
+	height: $icon-sz-sm;
 	position: relative;
 	text-align: center;
-  width: 22px;
+  width: $icon-sz-sm;
   &:after {
 		height: 100%;
 		position: absolute;
@@ -16,24 +17,80 @@
 		right: 0;
 		top: 0;
 		width: 100%;
-  }
+	}
+	&--md {
+		font-size: $icon-sz-md;
+		height: $icon-sz-md;
+		width: $icon-sz-md;
+	}
+	&--red {
+		color: $red;
+	}
+	&--blue {
+		color: $blue;
+	}
+	&--silver {
+		color: $silver-4;
+	}
+	&-burger {
+		&:after {
+			content: $icon-burger;
+		}
+	}
+	&-star {
+		&:after {
+			content: $icon-star;
+		}
+	}
+	&-pen {
+		&:after {
+			content: $icon-pen;
+		}
+	}
+	&-arrow-left {
+		&:after {
+			content: $icon-arrow-left;
+		}
+	}
+	&-triple-dots {
+		&:after {
+			content: $icon-triple-dots;
+		}
+	}
+	&-phone {
+		&:after {
+			content: $icon-phone;
+		}
+	}
+	&-email {
+		&:after {
+			content: $icon-email;
+		}
+	}
+	&-location {
+		&:after {
+			content: $icon-location;
+		}
+	}
+	&-hongout {
+		&:after {
+			content: $icon-hongout;
+		}
+	}
+	&-share {
+		&:after {
+			content: $icon-share;
+		}
+	}
+	&-search {
+		&:after {
+			content: $icon-search;
+		}
+	}
+	&-plus {
+		&:after {
+			content: $icon-plus;
+		}
+	}
 }
 
-.icon--red {
-	color: $red;
-}
-
-
-.icon-burger {
-  &:after {
-		content: $icon-burger;
-		font-size: 25px;
-  }
-}
-
-.icon-star {
-  &:after {
-		content: $icon-star;
-		font-size: 25px;
-  }
-}

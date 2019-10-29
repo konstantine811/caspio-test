@@ -1,0 +1,33 @@
+.profile.window-transition#profile-menu
+	header.profile-header.profile-header__inner.bgc-blue-layers
+		.wrapper.d-flex.flex-column.justify-content-space-btwn.h-100
+			.profile-actions.d-flex.justify-content-space-btwn.justify-content-end--md
+				button.btn.icon.icon-arrow-left.d-none--md#btn-back-dashboard
+				.profile-actions__inner
+					button.btn.icon.icon-pen.mr-4
+					button.btn.icon.icon-star.mr-4.d-none.d-inline-block--md
+					button.btn.icon.icon-share.mr-4.d-none.d-inline-block--md
+					button.btn.icon.icon-triple-dots
+			.profile-name.profile-name__inner.txt-center
+				h2.title-2 Ali Connors
+			button.btn.btn-float.btn-float--red.btn-float--bottom-right.d-none--md
+				.icon.icon-star
+	.profile-content.pl-3.pt-4
+		.d-flex.menu__inner
+			.icon.icon-phone.icon--blue.mt-5.mr-3
+			ul.ul-list-reset.w-100.profile-items
+				+profile-content('(650) 555-1234', 'Mobile', 'hongout')
+				+profile-content('(323) 555-6789', 'Work', 'hongout')
+				.divider.mt-2
+		.d-flex.menu__inner
+			.icon.icon-email.icon--blue.mt-5.mr-3
+			ul.ul-list-reset.w-100.profile-items
+				+profile-content('aliconnors@example.com', 'Personal')
+				+profile-content('ali_connors@example.com', 'Work')
+				.divider.mt-2
+		.d-flex.menu__inner
+			.icon.icon-location.icon--blue.mt-5.mr-3
+			ul.ul-list-reset.w-100.profile-items
+				+profile-content('2000 SW 1st Ave San Francisco, CA 94112', 'Home')
+				+profile-content('1600 Amphitheatre Pkwy Mountain View, CA 94043', 'Work')
+

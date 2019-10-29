@@ -13,71 +13,170 @@
     <div class="app-wrap">
       <header class="header bgc-blue">
         <div class="header__nav-wrap d-flex align-items-bottom">
-          <nav class="nav">
-            <button class="button-reset icon icon-burger"></button>
+          <nav class="header-nav d-flex justify-content-space-btwn">
+            <div class="header-nav__item d-flex">
+              <button class="btn icon icon-burger" id="btn-menu"></button>
+              <div class="drop-down">
+                <p class="drop-down-title txt">Title</p>
+                <div class="drop-down-arrow">
+                  <ul class="drop-down-items"></ul>
+                </div>
+              </div>
+            </div>
+            <div class="header-nav__item">
+              <button class="btn icon icon-search mr-3"></button>
+              <button class="btn icon icon-triple-dots"></button>
+            </div>
           </nav>
         </div>
+        <button class="btn btn-float btn-float--red btn-float--bottom-right">
+          <div class="icon icon-plus"></div>
+        </button>
       </header>
-      <main class="content">
-        <div class="menu bgc-white-grey">
-          <div class="menu__wrap">
+      <div class="content">
+        <aside class="menu bgc-white-grey window-transition" id="menu">
+          <div class="pl-3 pb-3">
             <div class="d-flex menu__inner">
-              <div class="menu-icon icon icon-star icon--red"></div>
-              <ul class="menu-items">
-                    <li class="menu__item">
+              <div class="menu-icon icon icon-star icon--red mt-2"></div>
+              <ul class="ul-list-reset w-100">
+                    <li class="menu-item menu__item">
                       <div class="avatar avatar__wrap"><img class="avatar-img" src="../assets/img/9B192636.jpg"></div><a class="menu-link txt">Carolyn Campbell</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu-item menu__item">
                       <div class="avatar avatar__wrap"><img class="avatar-img" src="../assets/img/9B192632.jpg"></div><a class="menu-link txt">Jennifer Carpenter</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu-item menu__item">
                       <div class="avatar avatar__wrap"><img class="avatar-img" src="../assets/img/9B192631.jpg"></div><a class="menu-link txt">Jeffrey Walters</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu-item menu__item">
                       <div class="avatar avatar__wrap"><img class="avatar-img" src="../assets/img/9B19263E.jpg"></div><a class="menu-link txt">Beverly Harris</a>
                     </li>
-                <div class="divider divider__wrap"></div>
+                <div class="divider mt-2"></div>
               </ul>
             </div>
             <div class="d-flex menu__inner">
-              <div class="menu-icon letter txt--red">A</div>
-              <ul class="menu-items">
-                    <li class="menu__item">
+              <div class="menu-icon letter txt--red mt-2">A</div>
+              <ul class="ul-list-reset w-100">
+                    <li class="menu-item menu__item">
                       <div class="avatar avatar__wrap"><img class="avatar-img" src="../assets/img/9B192630.jpg"></div><a class="menu-link txt">Brittany Delgado</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu-item menu__item">
                       <div class="avatar avatar__wrap"><img class="avatar-img" src="../assets/img/6AA2859B.jpg"></div><a class="menu-link txt">Wayne Ray</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu-item menu__item">
                       <div class="avatar avatar__wrap"><img class="avatar-img" src="../assets/img/9B192633.jpg"></div><a class="menu-link txt">Rachel Ross</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu-item menu__item">
                       <div class="avatar avatar__wrap"><img class="avatar-img" src="../assets/img/6AA2859D.jpg"></div><a class="menu-link txt">Bruce Morales</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu-item menu__item">
                       <div class="avatar avatar__wrap"><img class="avatar-img" src="../assets/img/9B192637.jpg"></div><a class="menu-link txt">Evelyn Morales</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu-item menu__item">
                       <div class="avatar avatar__wrap"><img class="avatar-img" src="../assets/img/6AA2859F.jpg"></div><a class="menu-link txt">Marie Fuller</a>
                     </li>
-                <div class="divider divider__wrap"></div>
+                <div class="divider mt-2"></div>
               </ul>
             </div>
             <div class="d-flex menu__inner">
-              <div class="menu-icon letter txt--red">B</div>
-              <ul class="menu-items">
-                    <li class="menu__item">
+              <div class="menu-icon letter txt--red mt-2">B</div>
+              <ul class="ul-list-reset w-100">
+                    <li class="menu-item menu__item">
                       <div class="avatar avatar__wrap"><img class="avatar-img" src="../assets/img/6AA28585.jpg"></div><a class="menu-link txt">Gregory Burton</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu-item menu__item">
                       <div class="avatar avatar__wrap"><img class="avatar-img" src="../assets/img/6AA2859C.jpg"></div><a class="menu-link txt">Beverly Armstrong</a>
                     </li>
-                <div class="divider divider__wrap"></div>
+                <div class="divider mt-2"></div>
               </ul>
             </div>
           </div>
-        </div>
-      </main>
+        </aside>
+        <main class="main-content">
+          <div class="profile window-transition" id="profile-menu">
+            <header class="profile-header profile-header__inner bgc-blue-layers">
+              <div class="wrapper d-flex flex-column justify-content-space-btwn h-100">
+                <div class="profile-actions d-flex justify-content-space-btwn justify-content-end--md">
+                  <button class="btn icon icon-arrow-left d-none--md" id="btn-back-dashboard"></button>
+                  <div class="profile-actions__inner">
+                    <button class="btn icon icon-pen mr-4"></button>
+                    <button class="btn icon icon-star mr-4 d-none d-inline-block--md"></button>
+                    <button class="btn icon icon-share mr-4 d-none d-inline-block--md"></button>
+                    <button class="btn icon icon-triple-dots"></button>
+                  </div>
+                </div>
+                <div class="profile-name profile-name__inner txt-center">
+                  <h2 class="title-2">Ali Connors</h2>
+                </div>
+                <button class="btn btn-float btn-float--red btn-float--bottom-right d-none--md">
+                  <div class="icon icon-star"></div>
+                </button>
+              </div>
+            </header>
+            <div class="profile-content pl-3 pt-4">
+              <div class="d-flex menu__inner">
+                <div class="icon icon-phone icon--blue mt-5 mr-3"></div>
+                <ul class="ul-list-reset w-100 profile-items">
+                      <li class="profile__item d-flex justify-content-space-btwn">
+                        <div class="profile-item__content">
+                          <p class="txt-md">(650) 555-1234</p>
+                          <p class="txt-sm txt--silver-light pt">Mobile</p>
+                        </div>
+                        <div class="profile-icon__wrap mr-3 align-self-end">
+                          <div class="icon icon--silver icon-hongout"></div>
+                        </div>
+                      </li>
+                      <li class="profile__item d-flex justify-content-space-btwn">
+                        <div class="profile-item__content">
+                          <p class="txt-md">(323) 555-6789</p>
+                          <p class="txt-sm txt--silver-light pt">Work</p>
+                        </div>
+                        <div class="profile-icon__wrap mr-3 align-self-end">
+                          <div class="icon icon--silver icon-hongout"></div>
+                        </div>
+                      </li>
+                  <div class="divider mt-2"></div>
+                </ul>
+              </div>
+              <div class="d-flex menu__inner">
+                <div class="icon icon-email icon--blue mt-5 mr-3"></div>
+                <ul class="ul-list-reset w-100 profile-items">
+                      <li class="profile__item d-flex justify-content-space-btwn">
+                        <div class="profile-item__content">
+                          <p class="txt-md">aliconnors@example.com</p>
+                          <p class="txt-sm txt--silver-light pt">Personal</p>
+                        </div>
+                      </li>
+                      <li class="profile__item d-flex justify-content-space-btwn">
+                        <div class="profile-item__content">
+                          <p class="txt-md">ali_connors@example.com</p>
+                          <p class="txt-sm txt--silver-light pt">Work</p>
+                        </div>
+                      </li>
+                  <div class="divider mt-2"></div>
+                </ul>
+              </div>
+              <div class="d-flex menu__inner">
+                <div class="icon icon-location icon--blue mt-5 mr-3"></div>
+                <ul class="ul-list-reset w-100 profile-items">
+                      <li class="profile__item d-flex justify-content-space-btwn">
+                        <div class="profile-item__content">
+                          <p class="txt-md">2000 SW 1st Ave San Francisco, CA 94112</p>
+                          <p class="txt-sm txt--silver-light pt">Home</p>
+                        </div>
+                      </li>
+                      <li class="profile__item d-flex justify-content-space-btwn">
+                        <div class="profile-item__content">
+                          <p class="txt-md">1600 Amphitheatre Pkwy Mountain View, CA 94043</p>
+                          <p class="txt-sm txt--silver-light pt">Work</p>
+                        </div>
+                      </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
       <script src="js/bundle.js"></script>
     </div>
   </body>
