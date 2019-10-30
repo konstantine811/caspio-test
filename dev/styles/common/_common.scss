@@ -144,6 +144,12 @@ body {
 	transform: translateX(-100%);
 }
 
+@include for-tablet-land-up {
+  .not-hidden--tablet {
+    transform: translateX(0)
+  }
+}
+
 .visible {
 	transform: translateX(0);
 }

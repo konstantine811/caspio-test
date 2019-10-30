@@ -24,6 +24,12 @@
 	margin: 0;
 }
 
+.txt-lg {
+	@include txt-style(Roboto, $font-size-txt-lg, $silver-2);
+	padding: 0;
+	margin: 0;
+}
+
 .title-2 {
 	@include txt-style(Roboto, $font-size-title-2, $white);
 	padding: 0;
@@ -39,6 +45,10 @@
 
 .txt--silver-light {
 	color: $silver-3;
+}
+
+.txt--white {
+	color: $white;
 }
 
 .txt-center {

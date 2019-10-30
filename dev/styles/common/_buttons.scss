@@ -2,7 +2,10 @@
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
-	outline: none;
+	outline: none !important;
+	&:active {
+		outline: none !important;
+	}
 }
 
 .btn-float {
@@ -15,6 +18,7 @@
 	position: absolute;
 	width: $btn-float-diameter;
 	box-shadow: $btn-float-box-shadow;
+	z-index: 100;
 	&--red {
 		background-color: $red;
 	}
@@ -24,3 +28,50 @@
 	}
 }
 
+.drop-down {
+	position: relative;
+	cursor: pointer;
+}
+
+.drop-down-title {
+	@include txt-style(Roboto, $font-size-txt-lg, $silver-2);
+	padding: 0;
+	margin: 0;
+	color: $white;
+	display: inline-block;
+	&:after {
+		content: $icon-arrow-drop-down;
+		font-family: "icomoon";
+		margin: $drop-down-arrow-margin;
+	}
+	&.open ~ .drop-down-items {
+		width: 145px;
+		height: auto;
+		.drop-down-item {
+			opacity: 1;
+			display: block;
+			transition-delay: .2s;
+		}
+	}
+}
+
+.drop-down-items {
+	position: absolute;
+	z-index: 1000;
+	background-color: white;
+	border-radius: 2px;
+	width: 0;
+	height: 0;
+	transition: all $hover-transition;
+}
+
+.drop-down-item {
+	text-align: center;
+	padding: 11px 0;
+	transition: all $hover-transition;
+	opacity: 0;
+	display: none;
+	&:hover {
+		background-color: $silver;
+	}
+}

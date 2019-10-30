@@ -1,12 +1,10 @@
 header.header.bgc-blue
 	.header__nav-wrap.d-flex.align-items-bottom
 		nav.header-nav.d-flex.justify-content-space-btwn
-			.header-nav__item.d-flex
+			.header-nav__item.d-flex.align-items-bottom
 				button.btn.icon.icon-burger#btn-menu
-				.drop-down
-					p.drop-down-title.txt Title
-					.drop-down-arrow
-						ul.drop-down-items
+				.header__drop-down
+					+drop-down('Title', ['Items 1', 'Items 2', 'Items 3'])
 			.header-nav__item
 				button.btn.icon.icon-search.mr-3
 				button.btn.icon.icon-triple-dots

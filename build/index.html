@@ -14,13 +14,23 @@
       <header class="header bgc-blue">
         <div class="header__nav-wrap d-flex align-items-bottom">
           <nav class="header-nav d-flex justify-content-space-btwn">
-            <div class="header-nav__item d-flex">
+            <div class="header-nav__item d-flex align-items-bottom">
               <button class="btn icon icon-burger" id="btn-menu"></button>
-              <div class="drop-down">
-                <p class="drop-down-title txt">Title</p>
-                <div class="drop-down-arrow">
-                  <ul class="drop-down-items"></ul>
-                </div>
+              <div class="header__drop-down">
+                    <div class="drop-down">
+                      <p class="drop-down-title" id="drop-down">Title</p>
+                      <ul class="drop-down-items ul-list-reset" id="drop-down-items">
+                        <li class="drop-down-item">
+                          <p class="txt">Items 1</p>
+                        </li>
+                        <li class="drop-down-item">
+                          <p class="txt">Items 2</p>
+                        </li>
+                        <li class="drop-down-item">
+                          <p class="txt">Items 3</p>
+                        </li>
+                      </ul>
+                    </div>
               </div>
             </div>
             <div class="header-nav__item">
@@ -93,7 +103,7 @@
           </div>
         </aside>
         <main class="main-content">
-          <div class="profile window-transition" id="profile-menu">
+          <div class="profile window-transition hidden not-hidden--tablet" id="profile-menu">
             <header class="profile-header profile-header__inner bgc-blue-layers">
               <div class="wrapper d-flex flex-column justify-content-space-btwn h-100">
                 <div class="profile-actions d-flex justify-content-space-btwn justify-content-end--md">

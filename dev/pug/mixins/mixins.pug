@@ -22,3 +22,11 @@ mixin profile-content(mainTxt, subTxt, icon)
 		if icon
 			.profile-icon__wrap.mr-3.align-self-end
 				.icon.icon--silver(class="icon-" + icon)
+
+mixin drop-down(title, items)
+	.drop-down
+		p.drop-down-title#drop-down= title
+		ul.drop-down-items.ul-list-reset#drop-down-items
+			each item in items
+				li.drop-down-item
+					p.txt= item

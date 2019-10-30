@@ -12,3 +12,8 @@
 	width: $side-width;
 	padding: $header-nav-padding;
 }
+
+.header__drop-down {
+	margin: $header-drop-down-margin;
+	bottom: $header-drop-down-bottom;
+}

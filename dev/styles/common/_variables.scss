@@ -29,18 +29,22 @@ $icon-sz-md: 25px;
 //animation
 $open-window-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 $open-window-duration: 0.2s;
+$hover-transition: .2s cubic-bezier(0.4, 0, 0.2, 1);
 
 //txt-styles
 $font-size-letter: 24px;
 $font-size-txt-sm: 13px;
 $font-size-txt: 15px;
 $font-size-txt-md: 16px;
+$font-size-txt-lg: 21px;
 $font-size-title-2: 35px;
 $font-size-title-2-table-up: 58px;
 
 //buttons
 $btn-float-diameter: 56px;
 $btn-float-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+//drop-down
+$drop-down-arrow-margin: 0 0 0 8px;
 
 //common styles
 //common spacer
@@ -63,6 +67,8 @@ $avatar-margin-right: 14px;
 //header styles
 $header-height: 126px;
 $header-nav-padding: 20px 25px;
+$header-drop-down-margin: 0 0 0 45px;
+$header-drop-down-bottom: 6px;
 
 //content
 $content-height: 100vh;

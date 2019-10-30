@@ -6,10 +6,12 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
+	z-index: 101;
 	@include for-tablet-land-up {
 		position: absolute;
 		width: $profile-width-tablet-land;
 		top: $profile-top-tablet-land;
+		z-index: 99;
 	}
 	@include for-desktop-up {
 		width: $profile-width-desktop;
