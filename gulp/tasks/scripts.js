@@ -1,4 +1,4 @@
-const uglify = require('gulp-uglify');
+//const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const babel = require('gulp-babel');
 const webpack = require('webpack-stream');
@@ -17,7 +17,7 @@ module.exports = function () {
         presets: ['@babel/env']
       }))
       .pipe(concat('bundle.js'))
-      .pipe(uglify())
+      //.pipe(uglify())
       .pipe(sourcemaps.write('.'))
       .pipe($.gulp.dest('./build/js/'))
       .pipe($.browserSync.reload({
